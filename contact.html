@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Apex Auto Sales</h1>
+    </div>
+    <div id="tabs-top">
+        <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT US</Contact></a>
+    </div>
+    <div id="main-home">
+        <div id="cars-home">
+        </div>
+    </div>
+    <div id="main">
+        <div id="images" class="width-addition">
+            <img src="fotos/360_F_483268546_2RYpGrXpbOzB4ogRrzF3zDonwijt9MIF.jpg">
+            <img src="fotos/beautiful-young-woman-talking-handsome-260nw-2532025015.png">
+            <img src="fotos/istockphoto-1373210791-612x612.jpg">
+            <img src="fotos/istockphoto-2186859071-612x612.jpg">
+        </div>
+        <div id="info">
+            <h3>Adress:</h3>
+            <ul>
+                <li>250 Rissik street</li>
+                <li>Ptchefstroom</li>
+                <li>1456</li>
+            </ul>
+            <h3>Bussiness hours:</h3>
+            <ul>
+                <li>Monday: 08h00-17h00</li>
+                <li>Tuesday: 08h00-17h00</li>
+                <li>Wednesday: 08h00-17h00</li>
+                <li>Thursday: 08h00-17h00</li>
+                <li>Friday: 08h00-17h00</li>
+                <li>Saterday: 08h00-17h00</li>
+                <li>Sunday: 08h00-14h00</li>
+            </ul>
+            <h3>Contact information:</h3>
+            <ul>
+                <li>Number: 072 787 4762</li>
+                <li>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&toApexAutoSales@gmail.com"
+                        target="_blank">ApexAutoSales@gmail.com</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="contact">
+                <h3>FEEDBACK</h3>
+                <h3>WE WOULD LOVE TO HEAR FROM YOU</h3>
+                <input type="text" id="feedback-name" placeholder="Your Name">
+                <input type="text" id="feedback-email" placeholder="Your Email">
+                <textarea id="feedback-message" placeholder="Message"></textarea>
+                <a href="thankyou.html" id="submit-btn">SUBMIT</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("submit-btn").addEventListener("click", function (e) {
+            e.preventDefault();
+            var name = document.getElementById("feedback-name").value;
+            window.location.href = "thankyou.html?name=" + encodeURIComponent(name);
+        });
+    </script>
+
+</body>
+
+</html>
